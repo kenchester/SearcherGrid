@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".searchListActivity" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="48dp"
+            android:text="Search List"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/search_list_search1"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="Missing Dog Search (started 12/15/13)" />
+
+        <Button
+            android:id="@+id/search_list_search2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Missing Child Search (started 12/15/13)" />
+
+        <Button
+            android:id="@+id/searchListBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/changeSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp"
+            android:text="Back" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -17,6 +17,14 @@ public class MapActivity extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_map);
 
+    final Button button1 = (Button) findViewById(R.id.map_details);
+    button1.setOnClickListener(new Button.OnClickListener() {
+
+      public void onClick(View v) {
+        describe();
+      }
+    });
+
     final Button button2 = (Button) findViewById(R.id.map_back);
     button2.setOnClickListener(new Button.OnClickListener() {
 
@@ -26,8 +34,8 @@ public class MapActivity extends Activity {
     });
   }
 
-  protected void startANewSearch() {
-    Intent i = new Intent(this, SearchCreateActivity.class);
+  protected void describe() {
+    Intent i = new Intent(this, DescriptionActivity.class);
     startActivityForResult(i, ACTIVITY_CREATE);
   }
 

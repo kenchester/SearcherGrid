@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"        
+        android:layout_height="wrap_content"
         android:orientation="vertical" >
 
         <TextView
@@ -21,8 +21,27 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="72dp"
             android:layout_marginTop="18dp"
-            android:text="Details"/>
-       
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Details" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lost Dog Search" />
+        </LinearLayout>
+
         <Button
             android:id="@+id/description_search_edit"
             android:layout_width="match_parent"
@@ -58,12 +77,12 @@
             android:layout_marginLeft="72dp"
             android:layout_marginTop="18dp"
             android:text="Missing" />
-       
-         <Button
-             android:id="@+id/description_map"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:text="View Map" />
+
+        <Button
+            android:id="@+id/description_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Map" />
 
         <TextView
             android:id="@+id/textView1"
@@ -85,11 +104,11 @@
             android:layout_marginTop="18dp"
             android:text="Address" />
 
-         <Button
-             android:id="@+id/description_radius"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:text="Radius" />
+        <Button
+            android:id="@+id/description_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radius" />
 
         <TextView
             android:id="@+id/textView1"
@@ -100,12 +119,12 @@
             android:layout_marginLeft="72dp"
             android:layout_marginTop="18dp"
             android:text="350 ft" />
-        
+
         <Button
-        android:id="@+id/description_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"            
-        android:text="Back" />
+            android:id="@+id/description_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
     </LinearLayout>
 
 </RelativeLayout>

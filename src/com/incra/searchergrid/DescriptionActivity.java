@@ -26,7 +26,7 @@ public class DescriptionActivity extends Activity {
     });
 
     final Button button2 = (Button) findViewById(R.id.description_map);
-    button1.setOnClickListener(new Button.OnClickListener() {
+    button2.setOnClickListener(new Button.OnClickListener() {
 
       public void onClick(View v) {
         map();
